@@ -1,0 +1,118 @@
+/* Ensure the body and html take the full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Optional, in case you want a black background */
+}
+
+/* The container should center the image but not take the whole screen */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure the image is scaled to fit within the screen without scrolling */
+#slider-image {
+    max-width: 90vw;  /* Limit the image width to 90% of the viewport width */
+    max-height: 90vh; /* Limit the image height to 90% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio and avoid stretching */
+    transition: opacity 1s ease-in-out;
+}
+/* Ensure the body and html take the full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Optional, in case you want a black background */
+}
+
+/* The container should center the image but not take the whole screen */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure the image is scaled to fit within the screen without scrolling */
+#slider-image {
+    max-width: 90vw;  /* Limit the image width to 90% of the viewport width */
+    max-height: 90vh; /* Limit the image height to 90% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio and avoid stretching */
+    transition: opacity 1s ease-in-out;
+}
+/* Ensure the body and html take the full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Optional, in case you want a black background */
+}
+
+/* The container should center the image but not take the whole screen */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Ensure the image is scaled to fit within the screen without scrolling */
+#slider-image {
+    max-width: 90vw;  /* Limit the image width to 90% of the viewport width */
+    max-height: 90vh; /* Limit the image height to 90% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio and avoid stretching */
+    transition: opacity 1s ease-in-out;
+}
+    max-width: 90vw;  /* Limit the image width to 90% of the viewport width */
+    max-height: 90vh; /* Limit the image height to 90% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio and avoid stretching */
+    transition: opacity 1s ease-in-out;/* Ensure the body and html take the full screen */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Optional background color */
+}
+
+/* The container should center the image but not take the whole screen */
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* The image will be centered and will be smaller than full-screen */
+#slider-image {
+    max-width: 80%;  /* Limit the image width to 80% of the screen */
+    max-height: 80%; /* Limit the image height to 80% of the screen */
+    object-fit: contain; /* Ensure the image retains its aspect ratio */
+    transition: opacity 1s ease-in-out;
+}
