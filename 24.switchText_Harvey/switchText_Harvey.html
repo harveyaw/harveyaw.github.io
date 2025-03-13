@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Click Text Change</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, html {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .background-image {
+            width: 100%;      /* Stretches the image to 100% width of the viewport */
+            height: 100%;     /* Stretches the image to 100% height of the viewport */
+            position: absolute;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+        .text-box {
+            position: absolute;
+            bottom: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/batman.jpeg" class="background-image" id="image" alt="Batman">
+        <div class="text-box" id="text-box">Batman posing for the fans.</div>
+    </div>
+    
+    <script>
+        const sentences = [
+            "Batman posing for the fans.",
+            "As a kid Batman was my favriote superhero.",
+            "When I was a young kid I used to play with my younger cousins and one of them would always say I'm not Eli I'm Batman.",
+            "There's a Batman inside all of us.",
+            "Batman is cool."
+        ];
+        let index = 0;
+
+        document.getElementById("image").addEventListener("click", function() {
+            index = (index + 1) % sentences.length;
+            document.getElementById("text-box").textContent = sentences[index];
+        });
+    </script>
+</body>
+</html>
