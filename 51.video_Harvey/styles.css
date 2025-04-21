@@ -1,0 +1,41 @@
+/* Remove default spacing and ensure full-screen layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure body and html take up full viewport */
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Fullscreen background video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
+    z-index: -1; /* Sends video behind all other elements */
+}
+
+/* Centered quote box styling */
+.quote-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfectly center the box */
+    background-color: yellow; /* Yellow background */
+    color: black; /* Black text */
+    font-weight: bold; /* Bold text */
+    padding: 20px 40px; /* Spacing inside the box */
+    border-radius: 10px; /* Slightly rounded corners */
+    font-size: 1.5rem; /* Readable font size */
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Optional: Adds subtle shadow */
+}
